@@ -5,9 +5,12 @@
 body {
     display: flex;
     flex-direction: column;
+    font-family: Roboto, sans-serif;
+    margin: 0;
 }
 
 .header {
+    background-color: #1F2937;
     display: flex;
     justify-content: space-between;
 }
@@ -18,30 +21,66 @@ body {
 }
 
 .footer {
+    background-color: #1F2937;
+    color: #E5E7EB;
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
+
+
+.logo-holder {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    margin: 8px 8px;
+}
+
+.logo-text {
+    font-size: 20px;
+    font-weight: 600;
+    color: #F9FAF8
+}
+
+a {
+    color: #F9FAF8;
+    text-decoration: none;
+  }
+
+
+
+
+
 .section-1 {
     display: flex;
     justify-content: center;
     gap: 8px;
-    padding: 16px;
+    padding: 32px 48px;
+    background-color: #1F2937;
 }
 
 .subsection {
     display: flex;
     flex-direction: column;
+    justify-content: center;
 }
 
-.headertex-1 {
-
+.headertext-1 {
+    font-size: 32px;
+    font-weight: 1000;
+    color: #F9FAF8;
+    flex-wrap: wrap;
 }
 
 .description-1 {
-    
+    font-size: 10px;
+    color: #F9FAF8;
+    flex-wrap: wrap;
 }
+
+
+
 
 .section-2 {
     display: flex;
@@ -49,35 +88,78 @@ body {
 }
 
 .headertext-2 {
+    font-size: 36px;
+    font-weight: 700px;
+    color: #1F2937;
     text-align: center;
+    padding: 30px 0;
 }
 
 .container {
     display: flex;
     justify-content: center;
     align-items: center;
+    gap: 32px;
 }
 
 .subcontainer {
     display: flex;
     flex-direction: column;
+    gap: 8px;
 }
 
+
+
+
 .section-3 {
+    background-color: #E5E7EB;
     display: flex;
     flex-direction: column;
 }
+
+.quote {
+    font-size: 24px;
+    font-weight: lighter;
+}
+
+.author-quote {
+    font-size: 24px;
+    font-weight: 100;
+}
+
+
 
 .section-4 {
     display: flex;
     justify-content: center;
     align-items: center;
+    padding: 20px;
 }
 
 .container-2 {
     display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #3882F6;
+    width: 500px;
+    height: 100px;
+    border-radius: 25px;
+}
+
+.container-3 {
+    display: flex;
     flex-direction: column;
 }
+
+.headertext-3 {
+    color: #E5E7EB; 
+}
+
+.description-2 {
+    color: #E5E7EB;
+}
+
+
 
 
 ul {
@@ -85,7 +167,12 @@ ul {
     align-items: center;
     list-style: none;
     padding: 0;
-    margin: 0;
+    margin-right: 10px;
+}
+
+button {
+    color: #E5E7EB;
+    background-color: #3882F6;
 }
 
 .logo {
@@ -94,6 +181,20 @@ ul {
 }
 
 .image.placeholder {
-    max-width: 200px;
+    max-width: 300px;
     height: auto;
+    flex-shrink: 0;
+}
+.image.placeholder img{
+    max-width: 300px;
+    height: auto;
+    flex-shrink: 0;
+}
+
+.subcontainer .image {
+    width: 100px;
+    height: 100px;
+    object-fit:cover;
+    border-radius: 25%;
+    border: 2px solid #3882F6;
 }
